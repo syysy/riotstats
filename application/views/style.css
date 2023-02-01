@@ -1,0 +1,60 @@
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.mode{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+.mode:hover{
+    color: blue;
+}
+
+.player_card{
+    width: 550px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding-left:20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative; 
+    display: flex;
+}
+
+.player_card-body{
+    margin-left: 40px;
+}
+.player_card_header_title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.player_card_header_info{
+    display: flex;
+    gap: 5px;
+}
+
+.img_pp{
+    width: 30px;
+    height: 30px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.player_card_rank{
+    display: flex;
+}
+.img_rank{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
