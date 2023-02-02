@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -38,6 +39,7 @@
 
 <div>
     <p>Joueurs favoris -</p>
+    <?php if (isset($summonerInfo)) : ?>
     <div class ="player_card">
         <div class="player_card-header">
             <div class="player_card_header_title">
@@ -65,14 +67,13 @@
                 <p class="player_card-text">Nombre de défaites <?= $summonerRanks[1]['losses'] ?> </p>
             </div>
             <div>
-                <h4><a href="">Update</a></h4>
+                <h4><a href="<?= site_url('home/update/'.$summonerInfo[0]['name'].'/'.$summonerInfo[0]['region']) ?>">Update</a></h4>
             </div>
         </div>
     </div>
-    <li>Player 2</li>
-    <li>Player 3</li>
-    <li>Player 4</li>
-    <li>Player 5</li>
+    <?php else : ?>
+        <p>Vous n'avez pas encore de joueurs favoris</p>
+    <?php endif; ?>
 </div>
 </body>
 </html>

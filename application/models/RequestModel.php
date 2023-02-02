@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class RequestModel extends CI_Model {
 
-    private string $api_key = "RGAPI-e37ef36c-1ef7-4d52-b043-59708e8f6cb0";
+    private string $api_key = "RGAPI-335e34d5-3bb6-4880-8012-6fc1b1eacb54";
 	
 
     public function __construct() {
